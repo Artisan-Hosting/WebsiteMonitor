@@ -1,0 +1,10 @@
+[settings.app]
+interval_seconds = 3600  # Run health checks every 5 minutes
+
+[settings.websites]
+urls = [
+    "https://www.artisanhosting.net",
+    "https://mitobyte.com",
+    "https://staging.mitobyte.com",
+    "https://cloud.ramfield.net"
+]

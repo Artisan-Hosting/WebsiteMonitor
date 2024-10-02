@@ -1,0 +1,13 @@
+[Unit]
+Description=Website Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/website_monitor
+WorkingDirectory=/etc/website_monitor
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
